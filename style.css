@@ -1,0 +1,93 @@
+body{
+    background-image: url(images/chris-liverani-rD2dc_2S3i0-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: 'Open Sans',sans-serif;
+}
+#container {
+    width: 350px;
+    height: 520px;
+    background: rgba(0,0,0,.7);
+    margin: 0px auto;
+    position: relative;
+    top:40px;
+    border-radius: 5px;
+    box-shadow: 0 4px 4px 4px rgba(0,0,0,.5);
+}
+
+#result {
+    height: 120px;
+    background: rgba(0,0,0,0.7)
+}
+#history{
+    text-align: right;
+    color: rgba(255,255,255,0.6);
+    height: 20px;
+    margin: 0 20px;
+    padding-top: 10px;
+    font-size: 18px;
+}
+#output{
+    text-align: right;
+    color: white;
+    height: 60px;
+    margin: 10px 20px;
+    font-size: 30px;
+}
+#keyboard {
+    height: 400px;
+    padding-left: 15px;
+}
+.operator,.number,.empty{
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+    float: left;
+    border-radius: 50%;
+    border-width: 0;
+    font-weight: bold;
+    font-size: 15px;
+}
+.number{
+    background: rgba(0,0,0,.0);
+    color: white;
+    
+}
+.empty{
+     background: rgba(0,0,0,0);
+    
+}
+.number,.operator{
+    cursor: pointer;
+    transition: .5s;
+}
+.number:hover{
+    background: white;
+    color: black;
+}
+.operator:active,.number:active{
+    font-size: 13px;
+}
+.operator:focus,.number:focus,.empty:focus{
+    outline: 0;
+}
+button:nth-child(4){
+    font-size: 20px;
+    background: #20b2aa;
+}
+button:nth-child(8){
+    font-size: 20px;
+    background: #ffa500;
+}
+button:nth-child(12){
+    font-size: 20px;
+    background: #f08080;
+}
+button:nth-child(16){
+    font-size: 20px;
+    background: #7d93e0;
+}
+button:nth-child(20){
+    font-size: 20px;
+    background: #9477af;
+}
